@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+    
+
+</head>
+<body>
+    <ion-app>
+       <ion-header>
+           <ion-toolbar color="primary">
+               <ion-title style="font-weight: bold;" class="ion-text-center" >COC
+               <ion-icon name="wallet-sharp"  ></ion-icon></ion-title>
+           </ion-toolbar>
+       </ion-header>    
+    <ion-content>
+        <ion-grid>
+            <ion-row>
+                <ion-col>
+                    <ion-card>
+                        <ion-card-header>
+                            <ion-card-title>Bank Notes</ion-card-title>
+                        </ion-card-header>
+                        <div>
+                            <ion-item>
+                                <ion-label> Rs 2000 X </ion-label>
+                                <ion-input type="number" id="oneip" oninput="myFunctionone()"> </ion-input>
+                                <ion-content id="oneop" padding ></ion-content>
+                              </ion-item>  
+                              <ion-item>
+                                <ion-label> Rs 1000 X </ion-label>
+                                <ion-input type="number" id="twoip" oninput="myFunctiontwo()"> </ion-input>
+                                <ion-content id="twoop" ></ion-content>
+                              </ion-item>
+                              <ion-item>
+                                <ion-label> Rs 500 X </ion-label>
+                                <ion-input type="number" id="threeip" oninput="myFunctionthree()"> </ion-input>
+                                <ion-content id="threeop" ></ion-content>
+                              </ion-item>  
+                              <ion-item>
+                                <ion-label> Rs 200 X </ion-label>
+                                <ion-input type="number" id="fourip" oninput="myFunctionfour()"> </ion-input>
+                                <ion-content id="fourop" ></ion-content>
+                              </ion-item>  
+                              <ion-item>
+                                <ion-label> Rs 100 X </ion-label>
+                                <ion-input type="number" id="fiveip" oninput="myFunctionfive()"> </ion-input>
+                                <ion-content id="fiveop" ></ion-content>
+                              </ion-item>  
+                              <ion-item>
+                                <ion-label> Rs 50 X </ion-label>
+                                <ion-input type="number" id="sixip" oninput="myFunctionsix()"> </ion-input>
+                                <ion-content id="sixop" ></ion-content>
+                              </ion-item>  
+                              <ion-item>
+                                <ion-label> Rs 20 X </ion-label>
+                                <ion-input type="number" id="sevenip" oninput="myFunctionseven()"> </ion-input>
+                                <ion-content id="sevenop" ></ion-content>
+                              </ion-item>  
+                              <ion-item>
+                                <ion-label> Rs 10 X </ion-label>
+                                <ion-input type="number" id="eightip" oninput="myFunctioneight()"> </ion-input>
+                                <ion-content id="eightop" ></ion-content>
+                              </ion-item>  
+                              <ion-row>
+                                <ion-col >
+                                  <ion-button id="btn-add">Calculate</ion-button>
+                                  <p margin >Total Amount: <span id="total-expenses" > </span>  </p>
+                                </ion-col>
+                              </ion-row>
+                        </div>
+                        
+                    </ion-card>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-content>
+    <ion-footer>
+      <ion-toolbar color="primary">
+          <ion-title style="font-weight: bold;" class="ion-text-center" >Total
+      </ion-toolbar>
+    </ion-footer> 
+</ion-app>
+    
+
+    
+    <script src="app.js"></script>
+</body>
+</html>
