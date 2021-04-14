@@ -69,26 +69,64 @@
                               </ion-item>  
                               <ion-row>
                                 <ion-col >
-                                  <ion-button id="btn-add">Calculate</ion-button>
+                                  <ion-button id="btn-add"  >Calculate</ion-button>
                                   <p margin >Total Amount: <span id="total-expenses" > </span>  </p>
                                 </ion-col>
                               </ion-row>
                         </div>
+                        <ion-card-header>
+                          <ion-card-title>Bank Coins</ion-card-title>
+                      </ion-card-header>
+                      <div>
+                          <ion-item>
+                              <ion-label> Rs 10 X </ion-label>
+                              <ion-input type="number" id="coneip" oninput="Functionone()"> </ion-input>
+                              <ion-content id="coneop" padding ></ion-content>
+                            </ion-item>  
+                            <ion-item>
+                              <ion-label> Rs 5 X </ion-label>
+                              <ion-input type="number" id="ctwoip" oninput="Functiontwo()"> </ion-input>
+                              <ion-content id="ctwoop" ></ion-content>
+                            </ion-item>
+                            <ion-item>
+                              <ion-label> Rs 2 X </ion-label>
+                              <ion-input type="number" id="cthreeip" oninput="Functionthree()"> </ion-input>
+                              <ion-content id="cthreeop" ></ion-content>
+                            </ion-item>  
+                            <ion-item>
+                              <ion-label> Rs 1 X </ion-label>
+                              <ion-input type="number" id="cfourip" oninput="Functionfour()"> </ion-input>
+                              <ion-content id="cfourop" ></ion-content>
+                            </ion-item> 
+                            <ion-row>
+                              <ion-col >
+                                <ion-button id="btn-add-coin" >Calculate</ion-button>
+                                <p margin >Total Amount: <span id="total-expenses-coin" > </span>  </p>
+                              </ion-col>
+                            </ion-row>
+                      </div>
                         
                     </ion-card>
                 </ion-col>
             </ion-row>
         </ion-grid>
     </ion-content>
+
     <ion-footer>
       <ion-toolbar color="primary">
-          <ion-title style="font-weight: bold;" class="ion-text-center" >Total
+        <ion-item color = "primary">
+          <ion-button padding id="btn-total" color="light" size="medium" >
+            Calculate Total
+          </ion-button>
+          <h1 margin style="font-weight: bold;"  > Rs: <span id="total-expenses-both-no" > </span>  </h1>
+        </ion-item>
+        <h1 margin style="font-weight: bold;"  >Rs: <span id="total-expenses-both" > </span> </h1>
       </ion-toolbar>
     </ion-footer> 
 </ion-app>
     
 
-    
+    <script src="numberToWords.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
